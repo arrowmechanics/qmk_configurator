@@ -86,7 +86,7 @@ export default {
       return `${date.toISOString()}`;
     },
     firmwareURL() {
-      return `https://github.com/qmk/qmk_firmware/tree/master/keyboards/${this.keyboard}`;
+      return `https://github.com/arrowmechanics/qmk_firmware/tree/wings-stable/keyboards/${this.keyboard}`;
     },
     myclasses() {
       let classes = [];
