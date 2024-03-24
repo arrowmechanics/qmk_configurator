@@ -176,7 +176,7 @@ const actions = {
   },
   async initTemplates({ commit }) {
     try {
-      const resp = await axios.get(`${backend_skeletons_url}/keymap`);
+      const resp = await axios.get(`${backend_skeletons_url}keymap/`);
       if (resp.status === 200) {
         let template = Object.assign({}, resp.data);
         delete template.keyboard;

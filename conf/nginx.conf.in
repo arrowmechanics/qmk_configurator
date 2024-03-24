@@ -31,11 +31,6 @@ http {
             try_files $uri $uri/ =404;
         }
 
-        location /api/ {
-            rewrite ^/api(/.*)$ /$1 break;
-            proxy_pass %API_URL%;
-        }
-
         location /docs/ {
             root /qmk_compiler/qmk_firmware/docs;
         }

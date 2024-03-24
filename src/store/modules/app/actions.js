@@ -116,7 +116,7 @@ const actions = {
       return p;
     }
     return axios
-      .get(`${backend_keyboards_url}/${state.keyboard}/info.json`)
+      .get(`${backend_keyboards_url}/${state.keyboard}/`)
       .then((resp) => {
         commit('setKeyboardMeta', resp);
         commit('processLayouts', resp);

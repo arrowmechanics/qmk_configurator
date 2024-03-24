@@ -11,7 +11,6 @@ WORKDIR /qmk_configurator/
 
 # Build configurator
 RUN yarn install
-ENV VITE_API_URL=/api
 RUN yarn run build
 
 ## Second Stage- Run
@@ -19,7 +18,6 @@ FROM nginx as run
 EXPOSE 80/tcp
 
 COPY --from=build /qmk_configurator/dist /qmk_configurator/dist
-COPY conf/nginx.conf.in /etc/nginx/nginx.conf.in
-COPY bin/docker_run.sh /qmk_configurator/bin/docker_run.sh
+COPY conf/nginx.conf.in /etc/nginx/nginx.conf
 
-CMD /bin/bash -i /qmk_configurator/bin/docker_run.sh
+CMD nginx -g 'daemon off;' && echo "QMK Configurator is ready to go!"
