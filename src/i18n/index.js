@@ -16,6 +16,7 @@ import zhHK from './zh-HK.csv';
 // the loader will parse the files and generate
 // the translation objects
 export default {
+  'pl-PL': plPL,
   en,
   de,
   es,
@@ -25,7 +26,6 @@ export default {
   ms,
   ru,
   zh,
-  'pl-PL': plPL,
   'pt-BR': ptBR,
   'zh-CN': zhCN,
   'zh-TW': zhTW,

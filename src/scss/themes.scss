@@ -43,7 +43,7 @@ html {
     #favorite-colorway {
       color: grey;
       &.active {
-        color: $qmk-green;
+        color: $qmk-green-light;
       }
     }
     .embedded-tutorial {
@@ -119,7 +119,7 @@ html {
       border-color: rgba(0, 0, 0, 0.7);
     }
     .status-log {
-      background: #272822;
+      background: $qmk-log-background;
       color: #f8f8f2;
       border-color: #000;
     }
@@ -133,7 +133,7 @@ html {
       color: white;
       border-color: #000;
       &.active {
-        background-color: #49ad4c;
+        background-color: $qmk-green;
       }
     }
     span.log-green {
@@ -184,21 +184,21 @@ html {
       color: #ccc;
     }
     .bottom-fixed {
-      background: #add8e6;
+      background: $qmk-lightblue;
       color: #222;
     }
     .key-contents.active-key {
       background: #d4f9d1;
     }
     .settings-panel--help-text {
-      background: #add8e6;
+      background: $qmk-lightblue;
       color: #222;
     }
     .input-url-modal {
       background-color: #eee;
       border-color: #ccc;
       button {
-        background-color: #49ad4c;
+        background-color: $qmk-green;
         color: #fff;
       }
     }
@@ -206,7 +206,7 @@ html {
       border-color: #cdcdcd;
     }
     .label-button {
-      background-color: #49ad4c;
+      background-color: $qmk-green;
       color: white;
       border-color: #000;
     }
@@ -274,7 +274,7 @@ html {
     #resetTest,
     #load-default,
     .ui-button {
-      background-color: #49ad4c;
+      background-color: $qmk-green;
       color: white;
       border-color: #000;
     }

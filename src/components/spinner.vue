@@ -6,7 +6,7 @@
         <div>
           <img
             class="space-potato working"
-            src="./../../assets/food-potato.svg"
+            src="./../../assets/arrowmechanics-logo-white.png"
           />
         </div>
         <h3 class="message" v-html="props.message"></h3>
@@ -28,7 +28,7 @@ export default {
     },
     message: {
       type: String,
-      default: 'Brought to you with much &#x1F496; by QMK'
+      default: 'Brought to you with much &#x1F496;<br>by QMK and Arrow Mechanics'
     }
   }
 };
@@ -45,8 +45,8 @@ export default {
   border-radius: 25%;
 }
 .spinner .space-potato {
-  width: 400px;
-  height: 200px;
+  width: 360px;
+  height: 280px;
 }
 .spinner .working {
   animation: rotation 12s infinite linear;
