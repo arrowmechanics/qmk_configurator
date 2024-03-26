@@ -1,6 +1,6 @@
 <template>
   <div id="app" @click="dismiss">
-    <span style="display: none">{{ revision }}</span>
+    <span style="display: none"><a href="https://github.com/qmk/qmk_configurator">QMK configurator</a> adapted and hosted by Arrow Mechanics</span>
     <div>
       <header>
         <p class="random-potato">{{ potatoFact }}</p>
@@ -11,9 +11,7 @@
     </div>
     <slideout-panel></slideout-panel>
     <footer>
-      <p>{{ $t('maintain') }}</p>
-      <p>{{ $t('hostedOn') }}</p>
-      <p style="font-size: 10px">version: {{ revision }}</p>
+      <p><a href="https://github.com/qmk/qmk_configurator">QMK configurator</a> adapted and hosted by Arrow Mechanics</p>
     </footer>
     <div
       class="help"
@@ -202,7 +200,7 @@ export default {
 @import '@/scss/style.scss';
 #app {
   display: grid;
-  grid-template: 1fr / minmax(1000px, 1300px);
+  grid-template: 1fr / minmax(1152px, 1324px);
   justify-content: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

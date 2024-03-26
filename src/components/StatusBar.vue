@@ -9,7 +9,7 @@
       ></a>
       <div class="qmk-app-name">QMK Configurator</div>
       <div class="bes-version">
-        {{ $t('apiVersionPrefix') }}
+        Arrow Mechanics API
         <span class="version-num">v{{ version }}</span>
       </div>
     </div>
