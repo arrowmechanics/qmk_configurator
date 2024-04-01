@@ -2,7 +2,6 @@
   <div>
     <div ref="console">
       <controllerTop v-if="appInitialized" />
-      <statusPanel />
       <controllerBottom />
     </div>
     <div class="hint hint-right">
@@ -71,7 +70,6 @@
 import capitalize from 'lodash/capitalize';
 import { mapMutations, mapState, mapGetters, mapActions } from 'vuex';
 import ControllerTop from '@/components/ControllerTop.vue';
-import StatusPanel from '@/components/StatusPanel.vue';
 import ControllerBottom from '@/components/ControllerBottom.vue';
 import VisualKeymap from '@/components/VisualKeymap.vue';
 import LayerControl from '@/components/LayerControl.vue';
@@ -81,7 +79,6 @@ export default {
   props: {},
   components: {
     ControllerTop,
-    StatusPanel,
     ControllerBottom,
     VisualKeymap,
     LayerControl

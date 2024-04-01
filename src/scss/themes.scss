@@ -285,11 +285,6 @@ html {
       background: #ccc;
       color: #999;
     }
-    #terminal {
-      background: #272822;
-      border-color: #000;
-      color: #f8f8f2;
-    }
     #controller-bottom {
       background: #eee;
       border-color: #ccc;
@@ -387,18 +382,6 @@ html[data-theme='dark'] {
     &.detected {
       color: $qmk-black;
     }
-  }
-  #toggle-terminal-label {
-    color: #f8f8f2;
-  }
-  #toggle-terminal-label.collapsed {
-    color: #f8f8f2;
-  }
-  #toggle-terminal {
-    color: #f8f8f2;
-  }
-  #toggle-terminal.collapsed {
-    color: #f8f8f2;
   }
   #visual-keymap {
     background: $qmk-grey-dark;
