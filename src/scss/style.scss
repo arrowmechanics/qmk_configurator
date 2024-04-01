@@ -745,7 +745,6 @@ input[type='number'] {
 }
 @media print {
   .backend-status,
-  .random-potato,
   .openSettings,
   .print-controls,
   footer {
@@ -755,9 +754,4 @@ input[type='number'] {
   textarea {
     border-width: 0;
   }
-}
-
-.random-potato {
-  color: #2c3e50;
-  font-family: 'Roboto', sans-serif;
 }

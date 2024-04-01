@@ -2,9 +2,6 @@
   <div id="app" @click="dismiss">
     <span style="display: none"><a href="https://github.com/qmk/qmk_configurator">QMK configurator</a> adapted and hosted by Arrow Mechanics</span>
     <div>
-      <header>
-        <p class="random-potato">{{ potatoFact }}</p>
-      </header>
       <router-view />
       <spinner :is-visible="showSpinner" :status="spinnerMsg" />
       <InfoBar :msg="message" />
@@ -87,7 +84,6 @@ export default {
   data() {
     return {
       revision: import.meta.env.VITE_TRAVIS_COMMIT || 'dev',
-      potatoFact: 'QMK for potatoes',
       interval: 120000,
       destroyWatcher: undefined,
       panel: undefined,
@@ -117,9 +113,7 @@ export default {
   },
   async beforeMount() {
     await this.appLoad();
-    this.randomPotatoFact();
     this.interval = setInterval(() => {
-      this.randomPotatoFact();
     }, this.interval);
   },
   created() {
@@ -148,10 +142,6 @@ export default {
       'setMessage'
     ]),
     ...mapActions('app', ['loadApplicationState']),
-    randomPotatoFact() {
-      const len = size(this.$t('potato'));
-      this.potatoFact = this.$t('potato.' + random(1, len));
-    },
     async appLoad() {
       await this.loadApplicationState();
     },
